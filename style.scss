@@ -1,6 +1,4 @@
 // css reset
-
-
 * {
     margin: 0; 
     padding: 0; 
@@ -34,3 +32,7 @@
   select {appearance: none !important; border-radius: 0;}
 
 //end reset
+
+.movie {
+    padding: 25px 25px 0px;
+}

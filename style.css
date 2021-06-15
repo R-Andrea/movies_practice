@@ -43,4 +43,8 @@ select {
           appearance: none !important;
   border-radius: 0;
 }
+
+.movie {
+  padding: 25px 25px 0px;
+}
 /*# sourceMappingURL=style.css.map */
