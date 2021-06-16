@@ -22,23 +22,41 @@
 //     // }
 // }
 
+// function addMovies(movieTitle, movieYear) {
+
+//     let isNewer = "This movie is older than 2000";
+
+//     if (movieYear >= 2000 ) {
+
+//         isNewer = "This movie is newer than 2000."
+
+//     };
+
+//     return `
+//     <section class="movie">
+//         <h2>${movieTitle}</h2>
+//         <h3>${movieYear}</h3>
+//         <h4>${isNewer}<h4>
+//     </section> 
+//     `
+// };
+
+//alapbeallitas az, hogy hiba, valtozoban adjuk meg, hogy mi adja be
 function addMovies(movieTitle, movieYear) {
 
-    let isNewer = "This movie is older than 2000";
+    let toReturn = "Error"
 
-    if (movieYear >= 2000 ) {
+    if (typeof movieYear === "number" &&& typeof movieTitle === "string" ) {
 
-        isNewer = "This movie is newer than 2000."
-
+       toReturn = `
+        <section class="movie">
+            <h2>${movieTitle}</h2>
+            <h3>${movieYear}</h3>
+        </section> 
+        `
     };
 
-    return `
-    <section class="movie">
-        <h2>${movieTitle}</h2>
-        <h3>${movieYear}</h3>
-        <h4>${isNewer}<h4>
-    </section> 
-    `
+    return toReturn;
 };
 
 function logMovieTitle(movieTitle) {
